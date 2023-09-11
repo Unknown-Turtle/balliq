@@ -1,5 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from "react";
+import { Routes ,Route } from 'react-router-dom';
+import Home from'./Component/Home';
+       
+
+const App = function() {
+  return(
+    <>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+      </Routes>
+    </>
+  )
+}
+export default App;
+
+/*import './App.css';
 
 function App() {
   return (
@@ -22,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/
