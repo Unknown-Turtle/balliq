@@ -1,14 +1,22 @@
 
 import React from "react";
-import { Routes ,Route } from 'react-router-dom';
+import {Routes ,Route} from 'react-router-dom';
 import Home from'./Component/Home';
+import Data from'./Component/Data';
+import Info from'./Component/Info';
+import Error from'./Component/Error';
+import Navigation from './Component/Navigation'
        
 
 const App = function() {
   return(
     <>
+    <Navigation/>
       <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route exact path='/' element={<Home/>}/>
+        <Route path='/data' element={<Data/>}/>
+        <Route path='/info' element={<Info/>}/>
+        <Route path='*' element={<Error/>}/>
       </Routes>
     </>
   )
