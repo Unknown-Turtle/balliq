@@ -10,15 +10,16 @@ const Navigation = function() {
         <div className="container container-flex">
           <div className="logocontainer"> 
             <img src="../Images/logo.png" alt="Logo" className="logo"/> 
+            <>logo</>
           </div>
           <nav>
             <div className="list">
-            <NavLink to='/' className="listItem" activeClassName="active">Home</NavLink>
-            <NavLink to='/data' className="listItem" activeClassName="active">Data</NavLink>
-            <NavLink to='/info' className="listItem" activeClassName="active">Info</NavLink>
+            <NavLink exact to='/' className="listItem" activeClassName="active">Home</NavLink>
+            <NavLink exact to='/data' className="listItem" activeClassName="active">Data</NavLink>
+            <NavLink exact to='/info' className="listItem" activeClassName="active">Info</NavLink>
             </div>
           </nav>
-          <div className="Icon">
+          <div className="icons">
             <SearchIcon className="icon"/>
           </div>
         </div>

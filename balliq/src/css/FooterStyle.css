@@ -1,12 +1,16 @@
-:root{
-    --mainColor: #2249FF;
 
-}
-header{
+footer{
     background-color: var(--mainColor);
+    position: fixed;
+    bottom: 0;
+    background-color: grey;
+    width: 100%;
+    padding: .5em;
+    size: 1%;
 }
 
-.container{
+
+/*.container{
     width: 99%;
     margin: 0 auto;
     
